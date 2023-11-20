@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="194dp"
+    android:layout_height="194dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/marubatu_fields_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_0"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintEnd_toStartOf="@+id/marubatu_field_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_1"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintEnd_toStartOf="@+id/marubatu_field_2"
+            app:layout_constraintStart_toEndOf="@+id/marubatu_field_0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_2"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marubatu_field_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_3"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintBottom_toTopOf="@+id/marubatu_field_6"
+            app:layout_constraintEnd_toStartOf="@+id/marubatu_field_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marubatu_field_0" />
+
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_4"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintBottom_toTopOf="@+id/marubatu_field_7"
+            app:layout_constraintEnd_toStartOf="@+id/marubatu_field_5"
+            app:layout_constraintStart_toEndOf="@+id/marubatu_field_3"
+            app:layout_constraintTop_toBottomOf="@+id/marubatu_field_1" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_5"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintBottom_toTopOf="@+id/marubatu_field_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marubatu_field_4"
+            app:layout_constraintTop_toBottomOf="@+id/marubatu_field_2" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_6"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/marubatu_field_7"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_7"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/marubatu_field_8"
+            app:layout_constraintStart_toEndOf="@+id/marubatu_field_6" />
+
+        <com.anago.marubatu.ui.views.MaruBatuFieldView
+            android:id="@+id/marubatu_field_8"
+            android:layout_width="@dimen/marubatu_field_size"
+            android:layout_height="@dimen/marubatu_field_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marubatu_field_7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
